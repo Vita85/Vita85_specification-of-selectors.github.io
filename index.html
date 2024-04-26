@@ -8,49 +8,51 @@
   <title>Lesson 5</title>
 </head>
 <body>
+ <div class="container">
   <div>
-      <!-- всі, прямі, тег, клас, ідентифікатор, дочірні -->
-      <p>Правило div > p, w2(div + p)</p>
-      <p class="second-paragr">Правило div > p, w12(div + p + class)</p>
-      <p id="third-paragr">Правило div > p, w102(div + p + id)</p>
-      <section> 
-        <h5>Заголовок</h5>
-        <p>Правило div p, w2(div + p)</p>
-        <p>Правило div p, w2(div + p)</p>
-      </section>
-    </div>
+    <!-- всі, прямі, тег, клас, ідентифікатор, дочірні -->
+    <p>Правило div > p, w2(div + p)</p>
+    <p class="second-paragr">Правило div > p, w12(div + p + class)</p>
+    <p id="third-paragr">Правило div > p, w102(div + p + id)</p>
+    <section> 
+      <h5>Заголовок</h5>
+      <p>Правило div p, w2(div + p)</p>
+      <p>Правило div p, w2(div + p)</p>
+    </section>
+  </div>
 
-    <!-- Послідовність(перший)(всі) -->
-    <h4>Послідовність(перший) i (всі)</h4>
-    <span>Правило h4 + span, w2(h4+span)</span><br />
-    <span>Правило h4 ~ span, w2(h4+span)</span><br />
-    <span>Правило h4 ~ span, w2(h4+span)</span><br />
+  <!-- Послідовність(перший)(всі) -->
+  <h4>Послідовність(перший) i (всі)</h4>
+  <span>Правило h4 + span, w2(h4+span)</span><br />
+  <span>Правило h4 ~ span, w2(h4+span)</span><br />
+  <span>Правило h4 ~ span, w2(h4+span)</span><br />
 
-    <!-- Атрибут -->
-    <a href="#" id="link"
-      >
-      Cпецифічність селекторів w111(a+[attr]+#)</a
+  <!-- Атрибут -->
+  <a href="#" id="link"
     >
-    <br />
-    <a href="http://www.http.com.ua/"
-      >Якщо атрибут цього елементу починається з певної послідовності символів.
-      w11(a+[attr])</a
-    >
-    <br />
-    <a href="/www.pdf-test.pdf"
-      >Якщо атрибут цього елементу закінчується певною послідовностю символів.
-      w11(a+[attr])</a
-    >
-    <br />
-    <a href="http://google.com/"
-      >Якщо атрибут цього елементу містить певну підстроку чи фрагмент.
-      w11(a+[attr])</a
-    >
+    Cпецифічність селекторів w111(a+[attr]+#)</a
+  >
+  <br />
+  <a href="http://www.http.com.ua/"
+    >Якщо атрибут цього елементу починається з певної послідовності символів.
+    w11(a+[attr])</a
+  >
+  <br />
+  <a href="/www.pdf-test.pdf"
+    >Якщо атрибут цього елементу закінчується певною послідовностю символів.
+    w11(a+[attr])</a
+  >
+  <br />
+  <a href="http://google.com/"
+    >Якщо атрибут цього елементу містить певну підстроку чи фрагмент.
+    w11(a+[attr])</a
+  >
 
-    <!-- Комбінації селекторів -->
-    <div class="bgc-div">Cпецифічність селекторів w11(div+class)</div>
-    <div class="bgc-div" id="id-div">
-      Cпецифічність селекторів w111(div+class+#)
-    </div>
+  <!-- Комбінації селекторів -->
+  <div class="bgc-div">Cпецифічність селекторів w11(div+class)</div>
+  <div class="bgc-div" id="id-div">
+    Cпецифічність селекторів w111(div+class+#)
+  </div>
+ </div>
 </body>
 </html>
